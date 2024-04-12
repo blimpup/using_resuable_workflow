@@ -10,11 +10,11 @@
  name: 'Terrateam Workflow'
  on:
    workflow_dispatch:
-       # work-token:
-       #   description: 'Work Token'
-       #   required: true
-       # api-base-url:
-       #   description: 'API Base URL'
+       work-token:
+         description: 'Work Token'
+         required: true
+       api-base-url:
+         description: 'API Base URL'
 
  jobs:
    terrateam:
