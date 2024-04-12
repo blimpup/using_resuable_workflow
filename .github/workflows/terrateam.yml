@@ -24,10 +24,8 @@
      # runs-on: ubuntu-latest
      # timeout-minutes: 1440
      # name: Terrateam Action
-     uses: blimpup/reusable_workflow@main
+     uses: blimpup/reusable_workflow/.github/workflows/terrateam.yml@main
      # with:
      #   work-token: '${{ github.event.inputs.work-token }}'
      #   api-base-url: '${{ github.event.inputs.api-base-url }}'
-     env:
-       SECRETS_CONTEXT: ${{ toJson(secrets) }}
-
+     secrets: inherit
