@@ -10,6 +10,7 @@
  name: 'Terrateam Workflow'
  on:
    workflow_dispatch:
+     inputs:
        work-token:
          description: 'Work Token'
          required: true
