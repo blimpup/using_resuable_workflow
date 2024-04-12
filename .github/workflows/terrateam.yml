@@ -26,7 +26,7 @@
      # timeout-minutes: 1440
      # name: Terrateam Action
      uses: blimpup/reusable_workflow/.github/workflows/terrateam.yml@main
-     # with:
-     #   work-token: '${{ github.event.inputs.work-token }}'
-     #   api-base-url: '${{ github.event.inputs.api-base-url }}'
+     with:
+       work-token: '${{ github.event.inputs.work-token }}'
+       api-base-url: '${{ github.event.inputs.api-base-url }}'
      secrets: inherit
